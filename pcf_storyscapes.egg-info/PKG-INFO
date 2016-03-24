@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: pcf-storyscapes
+Version: 0.1
+Summary: pcf_storyscapes, based on GeoNode
+Home-page: https://github.com/MapStory/pcf_storyscapes
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: BSD
+Description: pcf_storyscapes
+        ========================
+        
+        Installation
+        ------------
+        
+        Install the PWS CLI (https://docs.run.pivotal.io/starting/), configure your credentials then::
+        
+           $ git clone https://github.com/MapStory/pcf_storyscapes.git
+           $ cd pcf_storyscapes
+        Initial push
+           $ cf push -c "bash ./init_db.sh"
+        Additional pushes
+           $ cf push
+        
+Keywords: pcf_storyscapes geonode django
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning

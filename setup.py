@@ -5,11 +5,11 @@ def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
 setup(
-    name="pcf_geonode",
-    version="0.2",
+    name="pcf_storyscapes",
+    version="0.1",
     author="",
     author_email="",
-    description="pcf_geonode, based on GeoNode",
+    description="pcf_storyscapes, based on GeoNode",
     long_description=(read('README.rst')),
     # Full list of classifiers can be found at:
     # http://pypi.python.org/pypi?%3Aaction=list_classifiers
@@ -17,13 +17,13 @@ setup(
         'Development Status :: 1 - Planning',
     ],
     license="BSD",
-    keywords="pcf_geonode geonode django",
-    url='https://github.com/pcf_geonode/pcf_geonode',
-    packages=['pcf_geonode',],
+    keywords="pcf_storyscapes geonode django",
+    url='https://github.com/MapStory/pcf_storyscapes',
+    packages=['pcf_storyscapes',],
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'django-tastypie==0.11.0',
-        'geonode==2.4',
-    ]
+        'gunicorn==19.4.5',
+        'whitenoise==2.0.6'
+    ],
 )

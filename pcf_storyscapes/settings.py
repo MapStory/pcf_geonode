@@ -29,7 +29,7 @@ from geonode.settings import *
 # General Django development settings
 #
 
-SITENAME = 'pcf_geonode'
+SITENAME = 'pcf_storyscapes'
 
 # Defines the directory that contains the settings file as the LOCAL_ROOT
 # It is used for relative settings elsewhere.
@@ -37,7 +37,7 @@ GEONODE_ROOT = os.path.abspath(os.path.abspath(geonode.__file__))
 LOCAL_ROOT = os.path.abspath(os.path.dirname(__file__))
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
-WSGI_APPLICATION = "pcf_geonode.wsgi.application"
+WSGI_APPLICATION = "pcf_storyscapes.wsgi.application"
 
 
 # Load more settings from a file called local_settings.py if it exists
@@ -62,7 +62,7 @@ TEMPLATE_DIRS = (
 ) + TEMPLATE_DIRS
 
 # Location of url mappings
-ROOT_URLCONF = 'pcf_geonode.urls'
+ROOT_URLCONF = 'pcf_storyscapes.urls'
 
 
 # Location of locale files
