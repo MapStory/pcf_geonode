@@ -7,7 +7,14 @@ applications:
   memory: 1G
   disk_quota: 2G
   services:
-    - storyscapes_db 
   env:
     SECRET_KEY: 'aadc-t8j*i5a7^y9@d^$at#g0!j_h=h++5stj=nb7z8u#l_y#&'
     DEBUG: 'True'
+    POSTGRES_URL: 'postgres://storyscapes:storyscapes@geoshape.geointservices.io:5432/storyscapes'
+    POSTGIS_URL: 'postgis://storyscapes:storyscapes@geoshape.geointservices.io:5432/storyscapes_data'
+    GS_URL: 'http://geoshape.geointservices.io/geoserver/'
+    GS_USER: 'admin'
+    GS_PASSWORD: 'password'
+    ES_URL: 'http://geoshape.geointservices.io:9200/'
+    ES_INDEX: 'storyscapes'
+    RABBITMQ_URL: 'amqp://storyscapes:storyscapes@geoshape.geointservices.io:5672'

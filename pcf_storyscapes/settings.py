@@ -64,11 +64,16 @@ TEMPLATE_DIRS = (
 # Location of url mappings
 ROOT_URLCONF = 'pcf_storyscapes.urls'
 
-
 # Location of locale files
 LOCALE_PATHS = (
     os.path.join(LOCAL_ROOT, 'locale'),
     ) + LOCALE_PATHS
+if 'DATABASE_URL' and 'POSTGIS_URL' in os.environ:
+    import dj_database_url
+    POSTGIS = os.environ.get('POSTGIS_URL')
+    DATABASES = {'default': dj_database_url.config(conn_max_age=500), 'datastore': dj_database_url.config(POSTGIS, conn_max_age=500)}
 
-import dj_database_url
-DATABASES = {'default': dj_database_url.config()}
+
+
+
+

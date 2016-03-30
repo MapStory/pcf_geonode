@@ -1,3 +1,4 @@
 *.pyc
 .heroku/
 .venv/
+*.egg-info/
