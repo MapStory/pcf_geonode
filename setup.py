@@ -22,8 +22,5 @@ setup(
     packages=['pcf_storyscapes',],
     include_package_data=True,
     zip_safe=False,
-    install_requires=[
-        'gunicorn==19.4.5',
-        'whitenoise==2.0.6'
-    ],
+    install_requires=[],
 )

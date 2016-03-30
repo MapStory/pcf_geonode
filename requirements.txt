@@ -1,5 +1,10 @@
 -e git://github.com/terranodo/geonode.git@mapstory_master#egg=GeoNode
 -e git://github.com/pinax/django-mailer.git#egg=django-mailer
--e git://github.com/MapStory/icon-commons.git#egg=icon-commons
+-e git://github.com/MapStory/icon-commons.git#egg=django-icon-commons
 https://github.com/MapStory/django-maploom/archive/mapstory.zip
 -e git://github.com/BerryDaniel/storyscapes.git#egg=MapStory
+gunicorn==19.4.5
+whitenoise==2.0.6
+dj-database-url==0.4.0
+psycopg2==2.6.1
+geonode-notification==1.1.1
